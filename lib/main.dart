@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:islmai_app/home.dart';
+import 'package:islmai_app/home/home.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,9 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute:HomeScreen.routeName ,
+      debugShowCheckedModeBanner: false,
+      initialRoute: HomeScreen.routeName,
       routes: {
-        HomeScreen.routeName:(context)=>const HomeScreen(),
+        HomeScreen.routeName: (context) =>  HomeScreen(),
       },
     );
   }
